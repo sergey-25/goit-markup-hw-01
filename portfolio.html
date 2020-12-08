@@ -14,50 +14,64 @@
 <body>
     <header class="header">
     
+        <div class="container-top">
+            <a class="logo" href="./index.html">
+                <img class="logo-img" src="./images/logo.svg" width="145" class="logo-up" alt="WebStudio" />
+            </a>
+            <div class="nav-all">
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item">
+                            <a class="navigation-link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a class="navigation-link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a class="navigation-link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="adress-container">
+                <a class="header-mail" href="mailto:info@devstudio.com">
+                    <div class="info-icon-top"><svg class="mail-icon">
+                            <use href="./images/top-sprite.svg#icon-envelope-1" width="16" height="12"></use>
+                        </svg></div>info@devstudio.com
     
-        <a class="logo" href="./index.html">
-            <img class="logo-img" src="./images/logo.svg" width="145" class="logo-up" alt="WebStudio" />
-        </a>
-        <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="navigation-list-item">
-                    <a class="navigation-link" href="">Студия</a>
-                </li>
-                <li class="navigation-list-item">
-                    <a class="navigation-link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="navigation-list-item">
-                    <a class="navigation-link" href="">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <address class="address-top">
-            <a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header-tel" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
-        </address>
-    
+                </a>
+                <a class="header-tel" href="tel:+38 096 111 11 11">
+                    <div class="info-icon-top">
+                        <svg class="mail-icon-tel">
+                            <use href="./images/top-sprite.svg#icon-smartphone-1-1"></use>
+                        </svg>
+                    </div> +38 096 111 11 11
+                </a>
+                </address>
+            </div>
     
     
     </header>
     <main>
+        <div class="container"> 
         <section class="menu">
             <nav class="menu-nav">
                 
                 <ul class="menu-nav-list">
                     <li class="nav-list-item">
-                        <a class="menu-button-all" type="button" href="">Все</a>
+                         <button class="button-all" >Все</button>
                     </li>
                     <li class="nav-list-item">
-                        <a class="menu-button" type="button" href="">Веб-сайты</a>
+                        <button class="button-nav">Веб-сайты</button>
                     </li>
                     <li class="nav-list-item">
-                        <a class="menu-button" type="button" href="">Приложения</a>
+                        <button class="button-nav">Приложения</button>
                     </li>
                     <li class="nav-list-item">
-                        <a class="menu-button" type="button" href="">Дизайн</a>
+                        <button class="button-nav">Дизайн</button>
                     </li>
                     <li class="nav-list-item">
-                        <a class="menu-button" type="button" href="">Маркетинг</a>
+                        <button class="button-nav">Маркетинг</button>
                     </li>
                 </ul>
                
@@ -67,7 +81,7 @@
         <section class="portfolio">
             <nav>
                 <ul class="portfolio-list">
-                    <li class="portfolio-list-item">
+                    <div class="one"><li class="portfolio-list-item">
                         <img class="portfolio-img" src="./images-portf/imgt.jpg" width="370" height="294" alt="">
                         <h4 class="portfolio-title">Технокряк</h4>
                         <p class="portfolio-paragraph">Веб-сайт</p>
@@ -81,8 +95,8 @@
                         <img class="portfolio-img" src="./images-portf/img3.jpg" width="370" height="294" alt="">
                         <h4 class="portfolio-title">Ресторан Seafood</h4>
                         <p class="portfolio-paragraph">Приложение</p>
-                    </li>
-                    <li class="portfolio-list-item">
+                    </li></div>
+                    <div class="two"><li class="portfolio-list-item">
                         <img class="portfolio-img" src="./images-portf/img4.jpg" width="370" height="294" alt="">
                         <h4 class="portfolio-title">Проект Prime</h4>
                         <p class="portfolio-paragraph">Маркетинг</p>
@@ -96,8 +110,8 @@
                         <img class="portfolio-img" src="./images-portf/img6.jpg" width="370" height="294" alt="">
                         <h4 class="portfolio-title">Inspiration has no Borders</h4>
                         <p class="portfolio-paragraph">Веб-сайт</p>
-                    </li>
-                    <li class="portfolio-list-item">
+                    </li></div>
+                    <div class="three"><li class="portfolio-list-item">
                         <img class="portfolio-img" src="./images-portf/img7.jpg" width="370" height="294" alt="">
                         <h4 class="portfolio-title">Издание Limited Edition</h4>
                         <p class="portfolio-paragraph">Дизайн</p>
@@ -111,26 +125,60 @@
                         <img class="portfolio-img" src="./images-portf/img9.jpg" width="370" height="294" alt="">
                         <h4 class="portfolio-title">Growing Business</h4>
                         <p class="portfolio-paragraph">Приложение</p>
-                    </li>
+                    </li></div>
                 </ul>
             </nav>
         </section>
+    </div>
     </main>
 
     <footer class="footer">
+        <div class="container-second">
+            <div class="footer-info">
+                <img class="footer-img" src="./images/logofoot.svg" alt="WebStudio" />
+                <address class="footer-map">
+                    г. Киев, пр-т Леси Украинки, 26
+                </address>
     
-        <img class="footer-img" src="./images/logofoot.svg" alt="WebStudio" />
-        <address class="footer-map">
-            г. Киев, пр-т Леси Украинки, 26
-        </address>
-    
-        <address class="address-link">
-            <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
-            <div class="footer-telefon">
-                <a class="footer-tel" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
+                <address class="address-link">
+                    <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
+                    <a class="footer-tel" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
+                </address>
             </div>
-        </address>
+            <div class="link-down">
+                <p class="link-down-title ">присоединяйтесь</p>
+                <ul class="team-sosial-footer">
+                    <li class="team-sosial-item">
+                        <a class="team-button" href="https://www.instagram.com/">
+                            <svg class="footer-button-icon">
+                                <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a class="team-button" href="https://twitter.com/?lang=ru">
     
+                            <svg class="footer-button-icon">
+                                <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a></li>
+                    <li><a class="team-button" href="https://www.facebook.com/">
+                            <svg class="footer-button-icon">
+                                <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
+                            </svg>
+                        </a></li>
+                    <li><a class="team-button" href="https://www.linkedin.com/">
+                            <svg class="footer-button-icon">
+                                <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+    
+                </li>
+                </ul>
+            </div>
+            </ul>
+        </div>
+        </div>
     </footer>
 </body>
 
