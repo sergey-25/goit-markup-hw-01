@@ -15,20 +15,20 @@
     <header class="header">
         
             <div class="container-top">
-                <a class="logo"href="./index.html" >
-                    <img class="logo-img" src="./images/logo.svg" width="145" class="logo-up" alt="WebStudio" />
-                </a> 
+            <div class="logo-top">  <a class="logo"href="./index.html" >
+                    <img class="logo-img" src="./images/logo.svg" width="145" height="32"  class="logo-up" alt="WebStudio" />
+                </a> </div> 
                 <div class="nav-all">
                 <nav class="navigation">
                     <ul class="navigation-list">
-                        <li class="navigation-list-item">
-                            <a class="navigation-link" href="">Студия</a>
+                      <li class="navigation-list-item">
+                            <a class="navigation-link" href=""> <p class="par"> Студия</p></a>
                         </li>
                         <li class="navigation-list-item">
-                         <a class="navigation-link" href="./portfolio.html">Портфолио</a>
+                         <a class="navigation-link" href="./portfolio.html"> <p class="par-portfolio"> Портфолио</p></a>
                         </li>
                         <li class="navigation-list-item">
-                          <a class="navigation-link" href="">Контакты</a>
+                          <a class="navigation-link" href=""> <p class="par-contacts">Контакты</p></a>
                         </li>
                     </ul>
                 </nav> </div>
@@ -58,7 +58,7 @@
             
                 <section class="hero">
                     <div class="hero-content"><h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-                    <button class="hero-button">Заказать услугу</button></div>
+                    <button type="button" class="hero-button" data-modal-open>Заказать услугу</button></div>
                 </section>
             
                 <section class="opportunity">
@@ -104,12 +104,15 @@
 
                                 <li class="works-item">
                                     <img class="works-img" src="./images/imgf.jpg" width="370" height="294" alt="">
+                                    <h3 class="works-content">Десктопные приложения</h3>
                                 </li>
                                 <li class="works-item">
                                     <img class="works-img" src="./images/imgs.jpg" width="370" height="294" alt="">
+                                    <h3 class="works-content">Мобильные приложения</h3>
                                 </li>
                                 <li class="works-item">
                                     <img class="works-img" src="./images/imgth.jpg" width="370" height="294" alt="">
+                                    <h3 class="works-content">Дизайнерские решения</h3>
                                 </li>
                             </ul></div>
                     </section>
@@ -323,9 +326,9 @@
             <a class="footer-tel" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
             </address>
         </div>
-        <div class="link-down">
+        <div class="social-down">
            <p class="link-down-title ">присоединяйтесь</p>
-                <ul class="team-sosial-footer">
+                <ul class="link-down-list">
                     <li >
                         <a class="footer-team-button" href="https://www.instagram.com/">
                             <svg class="footer-button-icon">
@@ -333,8 +336,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li><a class="footer-team-button" href="https://twitter.com/?lang=ru">
-            
+                    <li>
+                        <a class="footer-team-button" href="https://twitter.com/?lang=ru">
                             <svg class="footer-button-icon">
                                 <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                             </svg>
@@ -351,12 +354,24 @@
                         </a></li>
                 </ul>
             
-            </li>
-            </ul>
             </div>
-        </ul>
+        
+        </div>
+    
+    </footer>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <div class="modal-container">
+                <h2 class="close-button-title">Оставьте свои данные, мы вам перезвоним</h2>
+            </div>
+            <button type="button" class="close-button" data-modal-close>
+                
+                <svg class="icon-close">
+                    <use href="./images/symbol-close.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
         </div>
     </div>
-    </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
