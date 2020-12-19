@@ -15,17 +15,17 @@
     <header class="header">
         
             <div class="container-top">
-            <div class="logo-top">  <a class="logo"href="./index.html" >
+            <div class="logo-top">  <a class="logo"href="#" >
                     <img class="logo-img" src="./images/logo.svg" width="145" height="32"  class="logo-up" alt="WebStudio" />
                 </a> </div> 
                 <div class="nav-all">
                 <nav class="navigation">
                     <ul class="navigation-list">
                       <li class="navigation-list-item">
-                            <a class="navigation-link" href=""> <p class="par"> Студия</p></a>
+                            <a class="navigation-link " href=""> <p class="par"> Студия</p></a>
                         </li>
                         <li class="navigation-list-item">
-                         <a class="navigation-link" href="./portfolio.html"> <p class="par-portfolio"> Портфолио</p></a>
+                         <a class="navigation-link" href="./portfolio.html">  Портфолио</p></a>
                         </li>
                         <li class="navigation-list-item">
                           <a class="navigation-link" href=""> <p class="par-contacts">Контакты</p></a>
@@ -263,7 +263,7 @@
                                   </li>
                               </ul></div>
                         </section>
-                        <section>
+                        <section class="our-clients">
                             <div class="clients container">
                                 <h2 class="clients-title">Постоянные клиенты</h2>
                                 <ul class="clients-list">
@@ -356,14 +356,78 @@
             
             </div>
         
+            <form class="form-footer" >
+                <p class="link-down-title">Подпишитесь на рассылку</p>
+                 <div class="footer-info-area">
+                <div class="form-footer-area">
+                <label for="mail"></label>
+                <input type="email" name="mail" id="mail" placeholder="E-mail">
+                </div>
+               
+                <button class="button-submit-footer" type="submit">
+                 
+                    Подписаться 
+                   <svg class="button-submit-icon">
+                    <use href="./images/symbol-modal.svg#icon-icon-send"></use>
+                </svg>
+            </button>
+        </div>
+            </form>
         </div>
     
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <div class="modal-container">
-                <h2 class="close-button-title">Оставьте свои данные, мы вам перезвоним</h2>
-            </div>
+            <h3>Оставьте свои данные, мы вам перезвоним</h3>
+            <form class="form">
+                            <div class="form-area">               
+                            <label class="form-label" for="name">Имя</label>
+                            <input class="form-input" type="text" name="user-name" id="name">
+                            <div class="person-container">
+                                <svg class="form-icon">
+                                    <use href="./images/symbol-modal.svg#icon-person-black-18dp-1"></use>
+                                </svg>
+                            </div>
+                            </div>
+
+                            <div class="form-area">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel">
+                            <div class="person-container">
+                                <svg class="form-icon">
+                                    <use href="./images/symbol-modal.svg#icon-phone-black-18dp-1"></use>
+                                </svg>
+                            </div>
+                            </div>
+
+                            <div class="form-area">
+                            <label for="mail">Почта</label>
+                            <input type="email" name="mail" id="mail">
+                            <div class="person-container">
+                                <svg class="form-icon">
+                                    <use href="./images/symbol-modal.svg#icon-email-black-18dp-1"></use>
+                                </svg>
+                            </div>
+                            </div>
+
+                            <div class="form-area">
+                            <label for="coment">Коментарий</label>
+                            <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                            <input type="checkbox" name="choice" id="choice">
+                            <label for="choice">Соглашаюсь с рассылкой и принимаю
+                                <a href=""> Условия договора</a>
+                            </label>
+                            </div>
+
+                            <div class="form-button">
+                            <button class="button-submit" type="submit">Оставить заявку</button>
+                            </div>
+                        </form>
+    
+            
             <button type="button" class="close-button" data-modal-close>
                 
                 <svg class="icon-close">
@@ -372,6 +436,9 @@
             </button>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

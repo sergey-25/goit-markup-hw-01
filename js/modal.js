@@ -10,5 +10,10 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-  }
+
+      const isModalOpen = refs.modal.classList('is-hidden');
+      const method = isModalOpen ? "disableBodyScroll" : "enableBodyScroll";
+      bodyScrollLock[method](refs.modal);
+    }
+    console.log(bodyScrollLock);
 })();
